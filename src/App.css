@@ -343,13 +343,33 @@ header {
 
 .second-section {
     background: hsl(220, 16%, 96%);
+    padding-bottom: 9rem;
 }
 
 
 .second-hero-section {
-    padding: 9rem 0;
+    padding: 9rem 0 4rem 0;
 }
 
+.second-section-flex span {
+    display: block;
+}
+
+.second-section-flex h1,
+p {
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+.second-section-flex p {
+    color: var(--Grayish-Blue);
+}
+
+.second-section-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 /* ////////////// RESPONSIVE AREA ///////////////////// */
 
@@ -405,5 +425,30 @@ header {
         padding: 7rem 0;
         text-align: center;
 
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .second-hero-section {
+        text-align: center;
+    }
+
+    .second-hero-section span {
+        display: inline;
+    }
+
+    .second-section-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-section-flex h1,
+    p {
+        text-align: center;
+    }
+
+    .svg-logo {
+        transform: translateX(5.8rem);
     }
 }
