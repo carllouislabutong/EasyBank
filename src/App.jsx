@@ -5,6 +5,10 @@ import "aos/dist/aos.css";
 import Logo from "./assets/logo.svg";
 import PhoneDesktop from "./assets/bg-intro-desktop.svg";
 import PhoneBg from "./assets/image-mockups.png";
+import Confetti from "./assets/image-confetti.jpg";
+import Currency from "./assets/image-currency.jpg";
+import Plane from "./assets/image-plane.jpg";
+import Resto from "./assets/image-restaurant.jpg";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 900 });
@@ -241,6 +245,74 @@ function App() {
                   <span>pension, and much more from one</span>
                   account. Tracking your money has
                   <span>never beeb easier.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="third-section">
+          <div className="main-container">
+            <h1>Latest Articles</h1>
+            <div className="third-section-flex">
+              <div className="third-first-flex">
+                <img
+                  src={Currency}
+                  alt="Money"
+                  style={{ objectFit: "contain" }}
+                />
+                <p>By Claire Robinson</p>
+                <h2>
+                  Receive money in any<span> currency with no fees.</span>
+                </h2>
+                <p>
+                  The world is getting smaller and
+                  <span>we're becoming more mobile. So</span>
+                  why should you be forced to only
+                  <span>receive money is a single...</span>
+                </p>
+              </div>
+              <div className="third-first-flex">
+                <img src={Resto} alt="resto" style={{ objectFit: "contain" }} />
+                <p>By wilson Hutton </p>
+                <h2>
+                  Treat yourself without<span> worrying about money.</span>
+                </h2>
+                <p>
+                  Our simple budgeting feature
+                  <span>allows you to separate out your</span>
+                  spending and set realistic limits
+                  <span>each month. That means you...</span>
+                </p>
+              </div>
+              <div className="third-first-flex">
+                <img src={Plane} alt="Plane" style={{ objectFit: "contain" }} />
+                <p>By Wilson Hutton</p>
+                <h2>
+                  Take your EasyBank card<span> whereever you go.</span>
+                </h2>
+                <p>
+                  We want you to enjoy your travels.
+                  <span>This is why we dont charge any</span>
+                  fees on purchases while you're
+                  <span>abroad. We'll even show you...</span>
+                </p>
+              </div>
+              <div className="third-first-flex">
+                <img
+                  src={Confetti}
+                  alt="Confetti"
+                  style={{ objectFit: "contain" }}
+                />
+                <p>By Claire Robinson</p>
+                <h2>
+                  Our invite-only Beta<span>accounts are now live!</span>
+                </h2>
+                <p>
+                  The world is getting smaller and{" "}
+                  <span>we're becoming more mobile. So</span>
+                  why should you be forced to only
+                  <span>receive money is a single...</span>
                 </p>
               </div>
             </div>
